@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascipt Object</title>
+    </head>
+
+<body>
+  <h2>arithmetic object</h2>
+  <p>check console</p>
+  <script>
+  class Arithmetic {
+      constructor(x, y) {
+        this.x = x;
+        this.y = y;
+      }
+  
+      add() {
+        return this.x + this.y;
+      }
+  
+      subtract() {
+        return this.x - this.y;
+      }
+  
+      multiply() {
+        return this.x * this.y;
+      }
+  
+      divide() {
+        return this.x / this.y;
+      }
+  }
+  
+  const obj = new Arithmetic(20, 9);
+  console.log(obj.add());    // 15
+  console.log(obj.subtract()); // 5
+  console.log(obj.multiply()); // 50
+  console.log(obj.divide());   // 2
+  </script>
+
+</body>
+
+  </html>
+  
